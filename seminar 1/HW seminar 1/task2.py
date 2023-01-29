@@ -9,6 +9,6 @@ print('Введите количество сделанных журавлико
 S = int(input())
 result = S // 2
 result1 = result // 2
-print (result)
 print (result1)
+print (result)
 print (result1)
