@@ -9,6 +9,18 @@
 print("Введите число арбузов: A")
 A = int(input())
 weight = []
+for i in range(A):
+    weight.append(int(input('Введите вес выбранного арбуза')))
+weight_min = weight[0]
+weight_max = weight[0]
+for i in range(len(weight)):
+    if weight[i] > weight_max:
+        weight_max = weight[i]
+    elif weight[i] < weight_min:
+        weight_min = weight[i]
+print(weight_max)
+print(weight_min)
+
 
 
 
