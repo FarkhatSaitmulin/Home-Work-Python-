@@ -12,6 +12,8 @@ b = int(input('Введите число B ='))
 # print(a+b)
 
 def sum(a, b):
+    if a and b > 0:
+        return (a+b)
     if b == 0:
         if a == 0:
             return 0
