@@ -11,6 +11,20 @@
 # Парам пам-пам
 
 
+# example_string = ""
+#
+# list_str = 'пара-ра-рам рам-пам-папам па-ра-па-да'.split()
+# print(str)
+# # [map(lambda s:)]
+# for i in list_str:
+#     sum_vowels = 0
+#     list_sum = [j for j in i in example_string]
+
+
+    # for j in i:
+    #     if j in example_string:
+    #         sum_vowels += 1
+
 example_string = "аяуюоеёэиы"
 list_str = "пара-ра-рам рам-пам-папам па-ра-па-дам".split()
 list_len = []
