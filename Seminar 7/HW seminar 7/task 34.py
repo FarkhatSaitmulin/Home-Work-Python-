@@ -10,26 +10,13 @@
 # Вывод:
 # Парам пам-пам
 
-example_string = ""
 
-list_str = 'пара-ра-рам рам-пам-папам па-ра-па-да'.split()
-print(str)
-# [map(lambda s:)]
-for i in list_str:
-    sum_vowels = 0
-    list_sum = [j for j in i in example_string]
+example_string = "аяуюоеёэиы"
+list_str = "пара-ра-рам рам-пам-папам па-ра-па-дам".split()
+list_len = []
 
+for one_str in list_str:
+    list_vowels = [vowels for vowels in one_str if vowels in example_string]  # [a,a,a,a]
+    list_len.append(len(list_vowels))
 
-    # for j in i:
-    #     if j in example_string:
-    #         sum_vowels += 1
-
-    example_string = "аяуюоеёэиы"
-    list_str = "пара-ра-рам рам-пам-папам па-ра-па-дам".split()
-    list_len = []
-
-    for one_str in list_str:
-        list_vowels = [vowels for vowels in one_str if vowels in example_string]  # [a,a,a,a]
-        list_len.append(len(list_vowels))
-
-    print("Парам пам-пам" if len(set(list_len)) == 1 else "Пам парам")
+print("Парам пам-пам" if len(set(list_len)) == 1 else "Пам парам")
